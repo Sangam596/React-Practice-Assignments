@@ -5,6 +5,7 @@ import UseOutput from './components/Assignment 1/UseOutput';
 import Validation from './components/Assignment 2/Validation';
 import Char from './components/Assignment 2/Char';
 import Blog from "./components/Axios/containers/Blog/Blog";
+import { BrowserRouter } from "react-router-dom";
 
 export class App extends Component {
   state={
@@ -38,7 +39,10 @@ export class App extends Component {
       </header>
       <fieldset>
          <legend>Axios Practice</legend>
+         <BrowserRouter>
          <Blog/>
+         </BrowserRouter>
+         
        </fieldset>
       <fieldset>
          <legend>Assignment 2</legend>
@@ -66,4 +70,4 @@ export class App extends Component {
   }
 }
 
-export default App
+export default App;

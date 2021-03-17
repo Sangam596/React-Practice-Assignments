@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 import './Post.css';
 
 const post = (props) => (
@@ -8,7 +9,7 @@ const post = (props) => (
         <div className="Info">
             <div className="Author">{props.author}</div>
         </div>
-    </article>
-);
+    </article>)
+
 
 export default post;
